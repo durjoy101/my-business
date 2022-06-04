@@ -1,0 +1,77 @@
+﻿
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    padding-top: 86px !important;
+}
+:root{
+    --primary_color:#3dbdb1;
+    --secondary_color:#1c4a22;
+    --light:#9dfff6;
+    --dark:#3b3b3b;
+}
+ 
+img#logolo {
+    height: 60px;
+}
+.carousel-inner .carousel-item img{
+    height:500px;
+}
+img.card-img-top {
+    height: 350px;
+}
+.topper {
+    background: #cb4646;
+    width: 40px;
+    height: 40px;
+    color: #0cd5c2;
+    border-radius: 20%;
+    position: fixed;
+    right: 20px;
+    bottom: 41px;
+    z-index:99;
+}
+.col-md-6.left_input {
+    padding-right: 5px;
+}
+.col-md-6.right_input {
+    padding-left: 5px;
+}
+i.fa-brands.fa-autoprefixer {
+    font-size: 21px;
+    padding: 11px;
+    line-height: 18px !important;
+}
+.navbar{
+    background-color: var(--primary_color) !important;
+}
+section#footer_top {
+    background-color: var(--secondary_color) !important;
+}
+#footer a, span {
+    color: var(--light) !important;
+}
+
+
+input#ContentPlaceHolder1_Button17 {
+    height: 50px;
+    width: 78px;
+}
+input#ContentPlaceHolder1_Button18 {
+    height: 50px;
+    width: 78px;
+}
+
+input#ContentPlaceHolder1_TextBox1 {
+    height: 63px;
+    width: 159px;
+}
+.calcu {
+    padding-left: 700px;
+    padding-top: 80px;
+}
+.btn {
+    padding: 12px;
+}

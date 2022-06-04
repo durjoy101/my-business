@@ -1,0 +1,327 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteHome.master.cs" Inherits="WebApplication1.MasterPage.SiteHome" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>my 2nd website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../CSS/custom.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+   <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="images/logo.jpg" class="" id="logolo" alt="logolojib"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about_us">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal"> log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/navbar-->
+
+         <!--slider-->
+
+    <section id="slider" class="mb-3 ">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="images/1.jpg" class="d-block w-100 image1" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--/slider-->
+
+         <!--blog-->
+    <section id="blog" class="mt-3">
+        <div class="container-fluid bg-info py-5">
+            <div class="container text-center pb-5">
+                <h1>first blog</h1>
+                <p> Hello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peter</p>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a short card.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--/blog-->
+    <!--about-->
+    <section id="about_us" class="about_us">
+        <div class="container">
+
+            <!-- section title-->
+            <div class="row py-4">
+                <div class="container text-center">
+                    <h1>About us</h1>
+                    <p> Hello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello peterHello </p>
+                </div>
+                <!--section container-->
+                <div class="row">
+                    <div class="col-md-2">
+                        <img class="img-fluid w-100 img-thumbnail" src="images/1.jpg" alt="Alternate Text" />
+                    </div>
+                    <div class="col-md-8">
+                        <h2>  who we are  </h2>
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">1111111111111111111111111111111</div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">222222222222222222222222222222</div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">33333333333333333333333333333</div>
+
+                        </div>
+
+
+                        <a class="btn btn-success" href="www.facebook.com">click here</a>
+                    </div>
+                </div>
+                <!--/section container-->
+            </div>
+        </div>
+
+    </section>
+    <!--/about-->
+    <!--contact-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row py-4">
+                <div class="container text-center">
+                    <h1>get in touch</h1>
+                    <p>adsf;llkjdSF;AOSIDJFG;ASOFJG;LKFDAJG;OIDJFG;LKDF</p>
+
+                </div>
+            </div>
+            <!--selcyion content-->
+            <div class="row">
+                <div class="col-md-2">
+                    <h3>contact us </h3>
+                    <p>
+                        Address: asjfsalkdj <br />
+                        mail: askhdfgaskfdn <br />
+                        MOBILE: 0651605161 <br />
+
+                    </p>
+
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <form>
+                        <div class="d-flex flex-row d-inline">
+                            <div class="col-md-6 left_input">
+                                <label for="inputEmail4" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+
+                            <div class="col-md-6 right_input">
+                                <label for="inputAddress" class="form-label">email</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">message</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+
+
+                        <div class="col-12 my-3">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+    </section>
+    <!--/contact-->
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!--footer top-->
+    <section id="footer_top" class="footer_top py-5 bg-info text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>about us</h4>
+                    <p>Learn from other people's experiences and make smarter choices · King Price Insurance · MiWay Insurance · DebtBusters SA · Capitec Bank</p>
+                    <img src="images/logo.jpg" width="130" height="100" />
+                </div>
+                <div class="col-md-4">
+                    <h4>   Quick links</h4>
+                    <ul>
+                        <li> <a href="#">home</a> </li>
+                        <li> <a href="#">about</a> </li>
+                        <li> <a href="#">contact</a> </li>
+                        <li> <a href="#">blog</a> </li>
+                        <li> <a href="#">privacy policy</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>subscribe</h4>
+                    <form action="/" method="post">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="your email" aria-label="" aria-describedby="button-addon2">
+                            <button class="btn btn-secondary" type="button" id="button-addon2">send</button>
+                        </div>
+                        <div class="social_icons">
+                            <i class="fa-brands fa-facebook-square"></i>
+                            <i class="fa-brands fa-youtube-square"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-instagram-square"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/footer top-->
+    <!--topeer-->
+    <div class="topper">
+        <a href="#" target="_top">
+            <i class="fa-brands fa-autoprefixer"></i>
+        </a>
+    </div>
+    <!--topper-->
+    <!--footer bottom-->
+    <section id="footer">
+        <div class="container-fluid bg-dark text-center p-2">
+            <span>&copy;</span><a class="text-decoration-none" href="#">copyright 2022</a>
+        </div>
+    </section>
+    <!--/footer bottom-->
+        <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                        <label>username/email</label>
+                        <input class="form-control" type="type" name="username" placeholder="username/email" />
+                        <br />
+                        <label>password</label>
+                        <input class="form-control" type="password" name="password" placeholder="..." />
+                        <br />
+                        <input class="form-control btn btn-primary " type="submit" name="name" value="login" />
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/modal-->
+
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
